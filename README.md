@@ -1,9 +1,9 @@
-## Buscador de palavrsa
+# Buscador de palavras
 
-# Motivação
+## Motivação
 Uma tarefa crucial na área de recuperação de informações é recuperar documentos que possuam as palavras-chave especificadas em uma consulta. A fim de resolver as consultas, os documentos precisam ser primeiro indexados. O programa desenvolvido simula o funcionamento de um buscador de palavras-chave. A aplicação desenvolvida é composta por dois módulos: indexação e consulta. Durante a indexação, as palavras do texto dado como entrada são carregadas em uma estrutura de dados, de forma que se possa identificar a linha em que cada palavra ocorre. Durante a fase de consultas, a aplicação lê um arquivo com as palavras a serem consultadas e gera um arquivo de saída com as palavras consultadas e as linhas do texto nas quais elas ocorrem.
 
-# Estruturas de dados utilizadas e explicação
+## Estruturas de dados utilizadas e explicação
 As estruturas de dados utilizadas foram uma árvore AVL e Listas Simplesmente Encadeadas. A
 árvore AVL possui os nodos de controle normais acrescidos de um nodo com a palavra lida do texto
 e um nodo com um ponteiro para uma Lista Simplesmente Encadeada que contêm dois nodos, um
@@ -19,15 +19,14 @@ até o fim da mesma, fazendo com que o uso de LSE’s(Listas Simplesmente Encade
 adequado.
 
 # Passo a passo
- Abre o arquivo;
- Vai pegando letra por letra e colocando no vetor até encontrar caracteres que sejam aceitados
+- Abre o arquivo;
+- Vai pegando letra por letra e colocando no vetor até encontrar caracteres que sejam aceitados
 pelo código;
- Quando a palavra estiver formada no vetor, esta é posta no nodo da árvore juntamente com a
-respectiva linha onde ela se encontrou;
- O procedimento acima é repetido até acabar o arquivo de entrada;
- Na consulta a formação de palavras é feita do mesmo jeito;
- Quando a palavra é formada, já é procurada na árvore AVL;
- Encontrado o nodo onde a palavra está, salva as linhas onde elas se situam no arquivo de saída.
+- Quando a palavra estiver formada no vetor, esta é posta no nodo da árvore juntamente com a respectiva linha onde ela se encontrou;
+- O procedimento acima é repetido até acabar o arquivo de entrada;
+- Na consulta a formação de palavras é feita do mesmo jeito;
+- Quando a palavra é formada, já é procurada na árvore AVL;
+- Encontrado o nodo onde a palavra está, salva as linhas onde elas se situam no arquivo de saída.
 
 # Otimização de tempo
 A otimização do código para demorar menos na parte de indexação foi, depois do código pronto, eliminar
