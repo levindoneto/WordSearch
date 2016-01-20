@@ -18,7 +18,7 @@ admitindo que a inserção já é feita em ordem crescente, a consulta pode ser 
 até o fim da mesma, fazendo com que o uso de LSE’s(Listas Simplesmente Encadeadas) fosse o mais
 adequado.
 
-# Passo a passo
+## Passo a passo
 - Abre o arquivo;
 - Vai pegando letra por letra e colocando no vetor até encontrar caracteres que sejam aceitados
 pelo código;
@@ -28,14 +28,10 @@ pelo código;
 - Quando a palavra é formada, já é procurada na árvore AVL;
 - Encontrado o nodo onde a palavra está, salva as linhas onde elas se situam no arquivo de saída.
 
-# Otimização de tempo
+## Otimização de tempo
 A otimização do código para demorar menos na parte de indexação foi, depois do código pronto, eliminar
 códigos não-alcançáveis ou redundantes, aplicação de um conjunto de heurísticas para detectar
 essas sequências e substituí-las por outras que removam as situações de ineficiência no programa.
 Outra coisa foi que ao invés de criar uma estrutura para o arquivo consulta, nosso programa pega
 palavra à palavra e faz a consulta direto na árvore previamente indexada.
 
-# Conclusão
-A conclusão que tiramos desse trabalho é que podemos ao fim da disciplina de Estrutura de Dados
-criar programas que antes, sem os conceitos de listas e árvores, eram de grande complexidade e levaria
-um tempo absolutamente grande.
