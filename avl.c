@@ -4,7 +4,7 @@
 #include <string.h>
 #include "estrutura.h"
 
-//***Funcao para consultar as palavras***S
+//***Funcao para consultar as palavras***
 pNodoA * consultar(pNodoA *raiz, TipoInfo word)
 {
 
