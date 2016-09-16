@@ -4,18 +4,12 @@
 #include "estrutura.h"
 #include <locale.h>    /* Biblioteca necessária para uso de configurações regionais. */
 
-
-
-//DEIXAR UM ESPAÇO NA FIND PARA N DAR BUG BIZARRo
-
 int main()
 {
-
-
     clock_t Ticks[2];
 
-	FILE *texto;        //Arquivo com texto para indexação.
-	FILE *consulta;     //Arquivo que contém as palavras para consulta.
+    FILE *texto;        //Arquivo com texto para indexação.
+    FILE *consulta;     //Arquivo que contém as palavras para consulta.
     FILE *saida;        //Arquivo para saida dos resultados
     char palavra[25] = {' '} ;
     char ch;
@@ -27,9 +21,9 @@ int main()
     TNodoA *achou = NULL;
 
 // Abre os arquivos para leitura e escrita
-	   texto = fopen("in.txt","r");
-       consulta = fopen("find.txt","r");
-	   saida = fopen("out.txt","w");
+    texto = fopen("in.txt","r");
+    consulta = fopen("find.txt","r");
+    saida = fopen("out.txt","w");
 
 
 	if((texto != NULL) && (consulta != NULL))
